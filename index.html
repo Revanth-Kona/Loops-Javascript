@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Looping Javascript Task</h1>
+    1. Multiplication Table of 5<br>
+    2. Sum of EVEN numbers between 1 to 50<br>
+    3. Sum of ODD numbers between 1 to 50<br>
+    4. Factorial Calculation<br>
+    5. Countdown Timer  // Prime Numbers
+    <script>
+        // Multiplication table
+        let num = 5;
+        for (i = 1; i <= 10; i++) {
+            let result = num * i
+            console.log(num + ' ' + 'X' + ' ' + i + ' ' + '=' + ' ' + result)
+            document.w
+        }
+
+        console.log('====================')
+
+        //Sum of even numbers
+        let sum = 0
+        for (j = 1; j <= 50; j++) {
+            if (j % 2 == 0) {
+                sum += j;
+            }
+        }
+        console.log('Sum of even numbers between 1 to 50 is :', sum)
+
+
+        console.log('==================')
+
+        //Sum of odd numbers
+        let sum1 = 0
+        for (k = 1; k <= 20; k++) {
+            if (k % 2 !== 0) {
+                sum1 += k;
+            }
+        }
+        console.log('Sum of odd numbers between 1 to 50 is :', sum1)
+
+
+        console.log('==================')
+
+
+        //Factorial Calculation
+        let x = 6, m = 1, fact = 1
+        while (m <= x) {
+            fact = fact * m
+            m++
+        }
+        console.log('Factorial calculation of 6 is :', fact)
+
+        console.log('==================')
+
+        // Prime Numbers
+        console.log('Prime Numbers')
+        let n = 2;
+        while (n <= 20) {
+            let guess = true;
+            for (let i = 2; i <= Math.sqrt(n); i++) {
+                if (n % i == 0) {
+                    guess = false;
+                    break;
+                }
+            }
+            if (guess) {
+                console.log(n);
+            }
+            n++;
+        }
+
+    </script>
+</body>
+</html>
